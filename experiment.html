@@ -1,0 +1,53 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow"><title>Signal Desk — Experiment Brief</title><style>body{background:#0E1420;color:#dbe4f0;font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;max-width:860px;margin:0 auto;padding:40px 24px;line-height:1.65}pre{white-space:pre-wrap;font-family:ui-monospace,Menlo,monospace;font-size:14px}a{color:#35D399}</style></head><body><a href="./index.html">&larr; back</a><pre># Stage 9 Experiment Brief
+
+Generated at 2026-07-05T12:59:31.105325+00:00
+
+This is a hard stop artifact. Nothing sends from this pipeline.
+
+## A/B Assignment Table
+
+| Account | Segment | Tier | Persona | Assignment | Target role | Named person | Status |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Prudential Singapore | insurers | T1 | entry_point | A_signal_mirror | Head of AI | [name withheld] | verified |
+| Prudential Singapore | insurers | T1 | champion | A_signal_mirror | Head of Claims | [name withheld] | verified |
+| OCBC | banks_and_digital | T1 | entry_point | A_signal_mirror | Head of AI | [name withheld] | verified |
+| OCBC | banks_and_digital | T1 | champion | A_signal_mirror | Head of Group Operations | [name withheld] | verified |
+| Bank of Singapore | asset_wealth_managers | T1 | entry_point | B_peer_proof | Head of AI | [name withheld] | verified |
+| Bank of Singapore | asset_wealth_managers | T1 | champion | B_peer_proof | Head of Private Banking | [name withheld] | verified |
+| Income Insurance | insurers | T1 | entry_point | B_peer_proof | Head of AI | [name withheld] | verified |
+| Income Insurance | insurers | T1 | champion | B_peer_proof | Head of Claims | [name withheld] | verified |
+
+## Metrics
+
+- Primary metric: reply rate
+- Secondary metrics: positive-reply rate, meetings booked
+- Unit of randomization: account level
+
+## Randomization Rationale
+
+Account-level randomization keeps the buying committee on one hypothesis, which avoids cross-contamination between the entry point and the champion inside the same account.
+
+The current send set has 4 accounts and 3 T1-qualified accounts in the broader portfolio.
+
+## Power Calculation
+
+Using a two-sided 5% alpha and 80% power, detecting a reply-rate lift from 5% to 8% requires about 1,059 accounts per arm (2,118 total).
+
+That is far above the four-account demo run, so this experiment brief is for instrumentation and readiness only, not statistical inference.
+
+## Send-Readiness Checklist
+
+- [ ] Every sequence passed the latest critique rubric.
+- [ ] No message contains internal meta-language.
+- [ ] No sentence repeats across touches in the same sequence.
+- [ ] The LinkedIn note stays under 300 characters.
+- [ ] Email 1 stays under 90 words.
+- [ ] Each email has exactly one credibility line.
+- [ ] Each CTA names a concrete artifact, workflow, checklist, evaluation, or question.
+- [ ] The sequence is fully cited against the evidence store.
+- [ ] The send list has been reviewed by a human and explicitly not deployed.
+
+## Hard Stop
+
+This pipeline generates instrumentation only. It does not schedule, queue, or send any outreach.
+</pre></body></html>
